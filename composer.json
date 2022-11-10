@@ -1,0 +1,17 @@
+{
+    "name": "example/example-apis",
+    "description": "example description",
+    "require": {
+        "slim/slim": "3.*",
+        "monolog/monolog": "^1.17",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "firebase/php-jwt": "^5.5",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "classes\\": "classes/"
+        }
+    }
+}
