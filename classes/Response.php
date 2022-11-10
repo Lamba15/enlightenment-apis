@@ -3,7 +3,7 @@
 namespace classes;
 
 class Response {
-    public  int $code;
+    public int $code;
     public mixed $data;
     public bool $success;
 
