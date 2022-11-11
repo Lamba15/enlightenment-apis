@@ -9,6 +9,8 @@ use Slim\Http\Response;
 
 require '../src/Helpers.php';
 
+$booksRoutes = require '../src/routes/booksRoutes.php';
+
 require '../vendor/autoload.php';
 
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
@@ -74,7 +76,7 @@ $app->add(function ($req, $res, $next) {
 //});
 
 // Routes
-//$RouteName($app);
+$booksRoutes($app);
 
 
 /** @noinspection PhpUnhandledExceptionInspection */
